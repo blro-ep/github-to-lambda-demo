@@ -12,7 +12,7 @@ data = {
 
 def lambda_handler(event, context):
     # Determine the HTTP method of the request
-    http_method = event["httpMethod"]
+    http_method = event["body"]
     # Handle GET request
     if http_method == "GET":
         # Return the data in the response
